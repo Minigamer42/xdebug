@@ -1,5 +1,10 @@
 --TEST--
 Test for bug #2222: trace values referring to their exception can be collected
+--SKIPIF--
+<?php
+require __DIR__ . '/../utils.inc';
+check_reqs('PHP >= 8.3');
+?>
 --INI--
 xdebug.mode=develop
 --FILE--
